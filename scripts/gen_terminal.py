@@ -44,28 +44,34 @@ ROWS = [
 H = BAR_H + PAD + 10 + (len(ROWS) - 1) * ROW + 30
 
 parts = []
+rows_svg = []
 y = BAR_H + PAD + 10
 X = PAD
 for kind, a, b in ROWS:
+    line_parts = []
     if kind == "blank":
         pass
     elif kind == "prompt":
-        parts.append(
+        line_parts.append(
             f'<text x="{X}" y="{y}"><tspan fill="{PROMPT}" font-weight="700">❯ </tspan>'
             f'<tspan fill="{CMD}">{esc(a)}</tspan></text>'
         )
         if a == "":
-            parts.append(
+            line_parts.append(
                 f'<rect class="blink" x="{X + 18}" y="{y - 11}" width="8" height="14" fill="{CMD}"/>'
             )
     elif kind == "out":
-        parts.append(f'<text x="{X}" y="{y}" fill="{OUT}">{esc(a)}</text>')
+        line_parts.append(f'<text x="{X}" y="{y}" fill="{OUT}">{esc(a)}</text>')
     elif kind == "ls":
-        parts.append(f'<text x="{X}" y="{y}" fill="{ACCENT}">{esc(a)}</text>')
-        parts.append(f'<text x="{X + 272}" y="{y}" fill="{OUT}">{esc(b)}</text>')
+        line_parts.append(f'<text x="{X}" y="{y}" fill="{ACCENT}">{esc(a)}</text>')
+        line_parts.append(f'<text x="{X + 272}" y="{y}" fill="{OUT}">{esc(b)}</text>')
     elif kind == "kv":
-        parts.append(f'<text x="{X}" y="{y}" fill="{PROMPT}">{esc(a)}</text>')
-        parts.append(f'<text x="{X + 74}" y="{y}" fill="{OUT}">{esc(b)}</text>')
+        line_parts.append(f'<text x="{X}" y="{y}" fill="{PROMPT}">{esc(a)}</text>')
+        line_parts.append(f'<text x="{X + 74}" y="{y}" fill="{OUT}">{esc(b)}</text>')
+    if line_parts:
+        delay = (len(rows_svg)) * 0.16
+        parts.append(f'<g class="ln" style="animation-delay:{delay:.2f}s">' + "".join(line_parts) + '</g>')
+    rows_svg.append(1)
     y += ROW
 
 svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Terminal: CodePlayer — software engineer, agent tooling">
@@ -73,6 +79,8 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
   text {{ font-family: {FONT}; font-size: {FS}px; white-space: pre; }}
   @keyframes blink {{ 0%, 45% {{ opacity: 1; }} 50%, 95% {{ opacity: 0; }} 100% {{ opacity: 1; }} }}
   .blink {{ animation: blink 1.1s steps(1, end) infinite; }}
+  @keyframes fade {{ from {{ opacity: 0; }} to {{ opacity: 1; }} }}
+  .ln {{ animation: fade .28s ease both; }}
 </style>
 <defs>
   <clipPath id="win"><rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="10"/></clipPath>
