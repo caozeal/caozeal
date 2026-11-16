@@ -1,4 +1,4 @@
-<img src="assets/panel.svg" width="100%" alt="CodePlayer — software engineer, 10 yrs, agent tooling. Terminal: whoami, cat ~/now, stack --list, contact --open. github.com/caozeal · caozeal.github.io" />
+<img src="assets/panel-v2.svg" width="100%" alt="CodePlayer — software engineer, 10 yrs, agent tooling. Terminal: whoami, cat ~/now, stack --list, contact --open. github.com/caozeal · caozeal.github.io" />
 
 <br/>
 

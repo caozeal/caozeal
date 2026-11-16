@@ -85,7 +85,7 @@ def terminal_rows() -> str:
             line.append(f'<text x="{CARD_X + PAD + 74}" y="{y}" fill="{OUT}">{esc(b)}</text>')
         if line:
             parts.append(
-                f'<g class="ln" style="animation-delay:{idx * 0.09:.2f}s">' + "".join(line) + "</g>"
+                f'<g class="ln" style="animation-delay:{idx * 0.22:.2f}s">' + "".join(line) + "</g>"
             )
         idx += 1
         y += ROW
@@ -132,7 +132,7 @@ def main() -> None:
   }}
   .scan {{ animation: scan 8s linear infinite; }}
   .blink {{ animation: blink 1.1s steps(1, end) infinite; }}
-  .ln {{ animation: fade .28s ease both; }}
+  .ln {{ animation: fade .34s ease both; }}
   .ga {{ animation: glitchA 5.5s steps(1, end) infinite; }}
   .gb {{ animation: glitchB 5.5s steps(1, end) infinite; animation-delay: .05s; }}
   .nm {{ animation: shake 5.5s steps(1, end) infinite; }}
@@ -228,7 +228,7 @@ def main() -> None:
 </g>
 </svg>
 """
-    out = Path(__file__).resolve().parent.parent / "assets" / "panel.svg"
+    out = Path(__file__).resolve().parent.parent / "assets" / "panel-v2.svg"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(svg)
     print(f"wrote {out} ({len(svg)} bytes, {W}x{H})")
