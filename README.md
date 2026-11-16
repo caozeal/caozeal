@@ -1,10 +1,4 @@
-<div align="center">
-  <img src="assets/hero-v2.svg" width="100%" alt="CodePlayer — software engineer, AI tooling" />
-</div>
-
-<br/>
-
-<img src="assets/session-v2.svg" width="100%" alt="Terminal — whoami: CodePlayer · Software Engineer · 10 yrs; cat ~/now: agent tooling · model gateway · long-term memory; stack: Java Spring Boot MySQL Redis Docker / TypeScript Swift Rust Python; contact: github.com/caozeal · caozeal.github.io" />
+<img src="assets/panel.svg" width="100%" alt="CodePlayer — software engineer, 10 yrs, agent tooling. Terminal: whoami, cat ~/now, stack --list, contact --open. github.com/caozeal · caozeal.github.io" />
 
 <br/>
 
