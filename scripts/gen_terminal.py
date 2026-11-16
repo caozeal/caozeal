@@ -69,7 +69,7 @@ for kind, a, b in ROWS:
         line_parts.append(f'<text x="{X}" y="{y}" fill="{PROMPT}">{esc(a)}</text>')
         line_parts.append(f'<text x="{X + 74}" y="{y}" fill="{OUT}">{esc(b)}</text>')
     if line_parts:
-        delay = (len(rows_svg)) * 0.16
+        delay = (len(rows_svg)) * 0.09
         parts.append(f'<g class="ln" style="animation-delay:{delay:.2f}s">' + "".join(line_parts) + '</g>')
     rows_svg.append(1)
     y += ROW
@@ -99,7 +99,7 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 </svg>
 """
 
-out = Path(__file__).resolve().parent.parent / "assets" / "session.svg"
+out = Path(__file__).resolve().parent.parent / "assets" / "session-v2.svg"
 out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(svg)
 print(f"wrote {out} ({len(svg)} bytes, {W}x{H})")
