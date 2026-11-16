@@ -99,7 +99,7 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 </svg>
 """
 
-out = Path(__file__).resolve().parent.parent / "assets" / "terminal.svg"
+out = Path(__file__).resolve().parent.parent / "assets" / "session.svg"
 out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(svg)
 print(f"wrote {out} ({len(svg)} bytes, {W}x{H})")

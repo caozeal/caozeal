@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="assets/terminal.svg" width="100%" alt="Terminal — whoami: CodePlayer · Software Engineer · 10 yrs; cat ~/now: agent tooling · model gateway · long-term memory; stack: Java Spring Boot MySQL Redis Docker / TypeScript Swift Rust Python; contact: github.com/caozeal · caozeal.github.io" />
+<img src="assets/session.svg" width="100%" alt="Terminal — whoami: CodePlayer · Software Engineer · 10 yrs; cat ~/now: agent tooling · model gateway · long-term memory; stack: Java Spring Boot MySQL Redis Docker / TypeScript Swift Rust Python; contact: github.com/caozeal · caozeal.github.io" />
 
 <br/>
 
