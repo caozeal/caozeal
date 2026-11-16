@@ -7,7 +7,6 @@ BAR_H = 38
 PAD = 28
 ROW = 21
 FS = 13
-H = BAR_H + PAD + 23 * ROW + PAD - 6
 
 BG = "#0d1117"
 BAR = "#161b22"
@@ -29,27 +28,20 @@ ROWS = [
     ("prompt", "whoami", ""),
     ("out", "CodePlayer · Software Engineer · 10 yrs", ""),
     ("blank", "", ""),
-    ("prompt", "cat ~/focus.txt", ""),
+    ("prompt", "cat ~/now", ""),
     ("out", "agent tooling · model gateway · long-term memory", ""),
-    ("blank", "", ""),
-    ("prompt", "ls -1 ~/projects", ""),
-    ("ls", "postme/", "原生 macOS 接口调试工具 · 常驻 40MB · 零依赖"),
-    ("ls", "dsh-plugins/", "DSH 插件集 · 侧栏 Git 面板 / AI 提交信息 / SVG 提交图"),
-    ("ls", "openviking-codebuddy-plugin/", "CodeBuddy 语义长期记忆插件 · hooks + MCP"),
-    ("ls", "cbstats/", "CodeBuddy 逐日 token 统计 · ccusage 的同类工具"),
-    ("ls", "skill-manager/", "多 agent 与技能的统一管理"),
-    ("ls", "next-code/", "VS Code 扩展 · 任意 OpenAI 兼容接口生成提交信息"),
     ("blank", "", ""),
     ("prompt", "stack --list", ""),
     ("kv", "backend", "Java · Spring Boot · MySQL · Redis · Docker"),
     ("kv", "tooling", "TypeScript · Swift · Rust · Python"),
     ("blank", "", ""),
-    ("prompt", "cat ~/.contact", ""),
-    ("kv", "blog", "https://caozeal.github.io"),
-    ("kv", "gh", "https://github.com/caozeal"),
+    ("prompt", "contact --open", ""),
+    ("out", "github.com/caozeal  ·  caozeal.github.io", ""),
     ("blank", "", ""),
     ("prompt", "", ""),
 ]
+
+H = BAR_H + PAD + 10 + (len(ROWS) - 1) * ROW + 30
 
 parts = []
 y = BAR_H + PAD + 10

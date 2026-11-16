@@ -7,11 +7,11 @@ BG = "#161b22"
 BORDER = "#30363d"
 TEXT = "#e6edf3"
 MARK = "#3fb950"
-H = 30
-FS = 13
-PAD_L = 12
-PAD_R = 14
-MARK_W = 14
+H = 26
+FS = 12
+PAD_L = 10
+PAD_R = 12
+MARK_W = 13
 
 ITEMS = [
     ("postme", "postme"),

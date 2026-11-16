@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="571" viewBox="0 0 860 571" role="img" aria-label="Terminal: CodePlayer — software engineer, agent tooling">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="379" viewBox="0 0 860 379" role="img" aria-label="Terminal: CodePlayer — software engineer, agent tooling">
 <style>
   text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; white-space: pre; }
   @keyframes blink { 0%, 45% { opacity: 1; } 50%, 95% { opacity: 0; } 100% { opacity: 1; } }
   .blink { animation: blink 1.1s steps(1, end) infinite; }
 </style>
 <defs>
-  <clipPath id="win"><rect x="0.5" y="0.5" width="859" height="570" rx="10"/></clipPath>
+  <clipPath id="win"><rect x="0.5" y="0.5" width="859" height="378" rx="10"/></clipPath>
 </defs>
 <g clip-path="url(#win)">
-  <rect width="860" height="571" fill="#0d1117"/>
+  <rect width="860" height="379" fill="#0d1117"/>
   <rect width="860" height="38" fill="#161b22"/>
   <circle cx="22" cy="19" r="6" fill="#ff5f57"/>
   <circle cx="42" cy="19" r="6" fill="#febc2e"/>
@@ -17,33 +17,17 @@
   <line x1="0" y1="38" x2="860" y2="38" stroke="#30363d"/>
 <text x="28" y="76"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3">whoami</tspan></text>
 <text x="28" y="97" fill="#8b949e">CodePlayer · Software Engineer · 10 yrs</text>
-<text x="28" y="139"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3">cat ~/focus.txt</tspan></text>
+<text x="28" y="139"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3">cat ~/now</tspan></text>
 <text x="28" y="160" fill="#8b949e">agent tooling · model gateway · long-term memory</text>
-<text x="28" y="202"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3">ls -1 ~/projects</tspan></text>
-<text x="28" y="223" fill="#58a6ff">postme/</text>
-<text x="300" y="223" fill="#8b949e">原生 macOS 接口调试工具 · 常驻 40MB · 零依赖</text>
-<text x="28" y="244" fill="#58a6ff">dsh-plugins/</text>
-<text x="300" y="244" fill="#8b949e">DSH 插件集 · 侧栏 Git 面板 / AI 提交信息 / SVG 提交图</text>
-<text x="28" y="265" fill="#58a6ff">openviking-codebuddy-plugin/</text>
-<text x="300" y="265" fill="#8b949e">CodeBuddy 语义长期记忆插件 · hooks + MCP</text>
-<text x="28" y="286" fill="#58a6ff">cbstats/</text>
-<text x="300" y="286" fill="#8b949e">CodeBuddy 逐日 token 统计 · ccusage 的同类工具</text>
-<text x="28" y="307" fill="#58a6ff">skill-manager/</text>
-<text x="300" y="307" fill="#8b949e">多 agent 与技能的统一管理</text>
-<text x="28" y="328" fill="#58a6ff">next-code/</text>
-<text x="300" y="328" fill="#8b949e">VS Code 扩展 · 任意 OpenAI 兼容接口生成提交信息</text>
-<text x="28" y="370"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3">stack --list</tspan></text>
-<text x="28" y="391" fill="#3fb950">backend</text>
-<text x="102" y="391" fill="#8b949e">Java · Spring Boot · MySQL · Redis · Docker</text>
-<text x="28" y="412" fill="#3fb950">tooling</text>
-<text x="102" y="412" fill="#8b949e">TypeScript · Swift · Rust · Python</text>
-<text x="28" y="454"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3">cat ~/.contact</tspan></text>
-<text x="28" y="475" fill="#3fb950">blog</text>
-<text x="102" y="475" fill="#8b949e">https://caozeal.github.io</text>
-<text x="28" y="496" fill="#3fb950">gh</text>
-<text x="102" y="496" fill="#8b949e">https://github.com/caozeal</text>
-<text x="28" y="538"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3"></tspan></text>
-<rect class="blink" x="46" y="527" width="8" height="14" fill="#e6edf3"/>
+<text x="28" y="202"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3">stack --list</tspan></text>
+<text x="28" y="223" fill="#3fb950">backend</text>
+<text x="102" y="223" fill="#8b949e">Java · Spring Boot · MySQL · Redis · Docker</text>
+<text x="28" y="244" fill="#3fb950">tooling</text>
+<text x="102" y="244" fill="#8b949e">TypeScript · Swift · Rust · Python</text>
+<text x="28" y="286"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3">contact --open</tspan></text>
+<text x="28" y="307" fill="#8b949e">github.com/caozeal  ·  caozeal.github.io</text>
+<text x="28" y="349"><tspan fill="#3fb950" font-weight="700">❯ </tspan><tspan fill="#e6edf3"></tspan></text>
+<rect class="blink" x="46" y="338" width="8" height="14" fill="#e6edf3"/>
 </g>
-<rect x="0.5" y="0.5" width="859" height="570" rx="10" fill="none" stroke="#30363d"/>
+<rect x="0.5" y="0.5" width="859" height="378" rx="10" fill="none" stroke="#30363d"/>
 </svg>
